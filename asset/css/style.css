@@ -1,0 +1,389 @@
+.header {
+  height: 80px;
+  background-color: #ef454a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__container {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+  color: black;
+  padding: 0 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header__logo a {
+  text-decoration: none;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+
+.hamburger {
+  width: 30px;
+  height: 80px;
+  position: relative;
+  appearance: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #ef454a;
+  cursor: pointer;
+}
+
+.hamburger span {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #ef454a;
+  transition: all 0.5s;
+}
+
+.hamburger span,
+.hamburger span::before,
+.hamburger span::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #003366;
+  transition: all 0.5s;
+}
+
+.hamburger span::before {
+  top: 10px;
+}
+
+.hamburger span::after {
+  bottom: 10px;
+}
+
+.nav {
+  position: fixed;
+  width: 30%;
+  height: 100vh;
+  top: 80px;
+  background-color:#003366;
+  padding: 50px 0;
+  transition: all 0.5s;
+  border-top: #fff 1px solid;
+}
+
+.nav__item a {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 0 20px 50px;
+  text-transform: uppercase;
+}
+
+.nav__item a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.hamburger.open span {
+  background-color: transparent;
+}
+
+.hamburger.open span::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.hamburger.open span::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+.nav {
+  right: -100%;  
+}
+
+.nav.open {
+  right: 0;  
+}
+
+.gaiyou{
+    margin-top: 80px;
+}
+
+.textTop{
+    margin: 20px 0 20px 30px;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 200;
+}
+.nike-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.asics-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: black solid;
+}
+
+.adidas-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: black solid;
+}
+
+.hoka-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: black solid;
+}
+
+.puma-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: black solid;
+}
+
+.img_logo{
+    padding-top: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.slideshow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.slideshow img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+.slideshow img.active {
+  opacity: 0.2;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255, 0.9); 
+  z-index: -1;
+}
+
+.scroll{
+      display:flex; 
+      gap:16px; 
+      padding:16px;
+      overflow-x:auto; 
+      scroll-snap-type:x mandatory;
+      background:var(--panel); 
+      border-radius:var(--radius); 
+      border:1px solid black;
+}
+.card{
+  max-height: 780px;
+  max-width: 300px;
+  flex:0 0 auto; 
+  scroll-snap-align:start;
+  background:var(--panel-2); 
+  border-radius:16px; 
+  border:1px solid black;
+  padding:14px; 
+  box-shadow:var(--shadow)
+}
+.tag{font-size:12px;
+  color:var(--muted)
+}
+.card h4{margin:.4rem 0 .2rem;
+  font-size:16px
+}
+.h-img{
+    border-radius:14px;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden; 
+    aspect-ratio:4/3;
+    background:black;
+    transform:translateZ(0)
+}
+.h-img img{
+  transition:transform .3s ease
+}
+.card:hover .h-img img{transform:scale(1.5)} 
+
+.header {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 10000000000; 
+}
+
+body{
+  font-family:sans-serif;
+  padding:20px 0;
+}
+.tags{display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-bottom:16px
+}
+button.tag{
+  padding:6px 12px;
+  border-radius:20px;
+  border:1px solid #999;
+  cursor:pointer;
+  background:#fff;
+}
+button.tag.active{
+  background:#82b9e4;
+  color:black;
+  border-color:#82b9e4;
+}
+.grid{
+  display:grid;
+  gap:12px
+}
+.card{
+  border:1px solid #ccc;
+  border-radius:8px;
+  padding:12px
+}
+.hidden{
+  display:none
+}
+
+.reactions { 
+  display:inline-flex; 
+  order:1px solid #333; 
+  border-radius:999px; 
+  overflow:hidden; 
+}
+
+button.active { 
+  color:#3ea6ff; 
+  background:#1b3b52; 
+}
+.count { 
+  font-size:0.9em; 
+  color:#aaa; 
+}
+button.active .count {
+  color:white; 
+}
+
+button:hover { 
+  background: skyblue; 
+}
+.hamburger:hover {
+  background: #ef454a !important; 
+}
+
+
+.footer {
+    position: static; 
+    width: 100%;
+    background-color: #ef454a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 20px 0 20px;     
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.footer.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.overlay { 
+  pointer-events: none; 
+}
+
+button.tag {
+  padding:6px 12px;
+  border-radius:20px;
+  border:1px solid #999;
+  cursor:pointer;
+  background:#fff;
+}
+button.tag:hover {
+  background:#000;
+  color:#fff;
+  border-color:#000;
+}
+
+.reactions button {
+  background:#222; 
+  border:0; 
+  color:white; 
+  padding:10px 16px;
+  display:flex; 
+  align-items:center; 
+  gap:6px; 
+  cursor:pointer; 
+  font-size:16px;
+}
+.reactions button:hover { 
+  background: skyblue; 
+}
+.reactions button.active { 
+  color:#3ea6ff; 
+  background:#1b3b52; 
+}
+.tag, #like, #dislike {
+  position: relative;
+  z-index: 10000;
+  pointer-events: auto;
+}
+
+
+#filterTags, 
+#like, 
+#dislike, 
+#likeCount, 
+#dislikeCount, 
+footer {
+  position: relative;
+  z-index: 99999 !important;
+  pointer-events: auto !important;
+}
+
+

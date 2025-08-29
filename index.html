@@ -3,10 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Runnning Rab</title>
     <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__logo"><a href="/">Runner's Rab</a></h1>
+            <button type="button" class="hamburger">
+                <span></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="https://www.nike.com/jp/w/running-shoes-37v7jzy7ok?msockid=2d367e9524f56cab36966b2f250f6d87">NIKE</a></li>
+                    <li class="nav__item"><a href="https://www.asics.com/jp/ja-jp/running-shoes/c/ja40101100/">asics</a></li>
+                    <li class="nav__item"><a href="https://ph.puma.com/ph/en/sport/running/running-shoes-1">PUMA</a></li>
+                    <li class="nav__item"><a href="https://www.adidas.jp/runningchart">adidas</a></li>
+                    <li class="nav__item"><a href="https://www.hoka.com/en/us/?msockid=2d367e9524f56cab36966b2f250f6d87">HOKA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="slideshow">
+          <img src="./asset/img/haikei.jpg" class="active">
+          <img src="./asset/img/haikei2.jpg">
+          <img src="./asset/img/haikei3.webp">
+        </div>
+        <div class="gaiyou">
+            <h1></h1>
+            <h2 class="gaiyou2">長距離ランナーのためのランニングシューズサイト</h2>
+        </div>
+        <p class="ttl">
+            <span class="icon">
+                <picture>
+                    <source srcset="https://atarimae-kanko.com/wp-content/themes/AtarimaeKanko/assets/image/icon/common/tags.webp" type="image/webp">
+                    <img src="https://atarimae-kanko.com/wp-content/themes/AtarimaeKanko/assets/image/icon/common/tags.png" type="image/png" alt="タグ">
+                </picture>
+            </span>
+            <span class="txt">TAGS</span>
+        </p>
+        <div class="tags" id="filterTags">
+            <button class="tag" data-tag="marathon">marathon</button>
+            <button class="tag" data-tag="middle">middle</button>
+            <button class="tag" data-tag="long">long</button>
+            <button class="tag" data-tag="practice">practice</button>
+            <button class="tag" data-tag="spike">spike</button>
+            <button class="tag" data-tag="speed">speed</button>
+            <button class="tag" data-tag="race">race</button>
+            <button class="tag" data-tag="jog">jog</button>
+        </div>
+        <div id="nike">
+            <div class="nike-top">
+                <h1 class="textTop">■NIKE</h1>
+            </div>
+            <section class="grid" id="productGrid">
+              <div class="scroll" >
+                <article class="card" data-tags="race,carbon,marathon">
+                  <div class="h-img"><img src="https://tse4.mm.bing.net/th/id/OIP.gmx3ztBB5bkduGQzP9SWkQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt=""></div>
+                  <h4>vaporfly 3</h4>
+                  <div>race / carbon / marathon</div>
+                </article>
+                <article class="card" data-tags="race,marathon,practice">
+                  <div class="h-img"><img src="https://image.rakuten.co.jp/shoesnuts/cabinet/nike202302/dm8974-601m01.jpg" alt=""></div>
+                  <h4>zoomfly 5</h4>
+                  <div class="tag">race / long / practice</div>
+                </article>
+                <article class="card" data-tags="race,carbon,marathon">
+                  <div class="h-img"><img src="https://static.nike.com/a/images/t_default/1149d543-bb3f-4f29-ae42-4c87c3c53830/W+AIR+ZOOM+ALPHAFLY+NEXT%25+3.png" ></div>
+                  <h4>alphafly 3</h4>
+                  <div class="tag">race/ carbon / marathon</div>
+                </article>
+                <article class="card" data-tags="jog">
+                  <div class="h-img"><img src="https://tse1.mm.bing.net/th/id/OIP.InDzwTVhxF_SGbMb_D5uJgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt=""></div>
+                  <h4>zoom pegasus40</h4>
+                  <div class="tag" data-tag="jog">jog</div>
+                </article>
+                <article class="card" data-tags="jog">
+                    <div class="h-img"><img src="./asset/img/NIKE+VOMERO+18+(GS).jpg" alt=""></div>
+                    <h4>vonero 18</h4>
+                    <div class="tag">jog</div>
+                </article>
+                <article class="card" data-tags="spile,middle,long">
+                  <div class="h-img"><img src="https://stat.ameba.jp/user_images/20210801/18/flightsports/ec/76/j/o2000200014980787528.jpg" alt=""></div>
+                  <h4>zoomx dragonfly</h4>
+                  <div class="tag">spike / middle / long</div>
+                </article>
+                <article class="card" data-tags="spike,middle">
+                    <div class="h-img"><img src="./asset/img/AIR+ZOOM+VICTORY+2+OLY.jpg" alt=""></div>
+                    <h4>airzoom victory2</h4>
+                    <div class="tag">spike /middle</div>
+                </article>
+                <article class="card" data-tags="spike,middle">
+                    <div class="h-img"><img src="asset/img/NIKE+ZOOM+MAMBA+6.jpg" alt=""></div>
+                    <h4>zoom mamba6</h4>
+                    <div class="tag">spike/middle</div>
+                </article>
+              </div>
+            </section>
+        </div>
+        <div id="asics">
+            <div id="asics-top">
+                <h1 class="textTop">■asics</h1>
+            </div>
+            <section class="grid" id="productGrid2">
+              <div class="scroll" >
+                <article class="card"  data-tags="race,carbon,marathon">
+                  <div class="h-img"><img src="https://images.asics.com/is/image/asics/1013A162_600_SR_RT_GLB?$sfcc-product$" alt=""></div>
+                  <h4>metaspeed sky</h4>
+                  <div class="tag">race / carbon / marathon</div>
+                </article>
+                <article class="card" data-tags="jog">
+                  <div class="h-img"><img src="https://images.asics.com/is/image/asics/1012B912_500_SR_RT_GLB?$sfcc-product$" alt=""></div>
+                  <h4>novabrast 5</h4>
+                  <div class="tag">jog</div>
+                </article>
+                <article class="card" data-tags="marathon,long,carbon">
+                  <div class="h-img"><img src="https://images.asics.com/is/image/asics/1013A124_600_SR_RT_GLB?$sfcc-product$" ></div>
+                  <h4>metaspeed edge plus</h4>
+                  <div class="tag">marathon / long / carbon</div>
+                </article>
+                <article class="card" data-tags="speed,middle">
+                  <div class="h-img"><img src="https://images.asics.com/is/image/asics/1013A098_100_SR_RT_GLB?$zoom$" alt=""></div>
+                  <h4>sortiemagic RP6</h4>
+                  <div class="tag">speed / middle</div>
+                </article>
+                <article class="card" data-tags="jog">
+                  <div class="h-img"><img src="https://images.asics.com/is/image/asics/1011C120_500_SR_RT_GLB?$sfcc-product$" alt=""></div>
+                  <h4>gel-nimbus27</h4>
+                  <div class="tag">jog</div>
+                </article>
+                <article class="card" data-tags="spike,long">
+                  <div class="h-img"><img src="https://images.asics.com/is/image/asics/1093A231_750_SR_RT_GLB?$zoom$" alt=""></div>
+                  <h4>metaspeed LD</h4>
+                  <div class="tag">spike / long</div>
+                </article>
+                <article class="card" data-tags="spike,middle">
+                  <div class="h-img"><img src="https://th.bing.com/th/id/OIP.0kOazSEpQQ8QSFuBvRpzNwHaFj?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt=""></div>
+                  <h4>metaspeed MD</h4>
+                  <div class="tag">spike / middle</div>
+                </article>
+                </div>
+            </section>
+        </div>
+        <div id="puma">
+            <div id="puma-top">
+                <h1 class="textTop">■puma</h1>
+            </div>
+            <section class="grid" id="productGrid3">
+              <div class="scroll" >
+                <article class="card"  data-tags="race,carbon,marathon">
+                  <div class="h-img"><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/377598/01/sv01/fnd/SEA/fmt/png/Fast-R-NITRO-Elite-Fireglow-Running-Shoes-Men" alt=""></div>
+                  <h4>fast-R nitro elite2</h4>
+                  <div class="tag">race / carbon / marathon</div>
+                </article>
+                <article class="card" data-tags="practice,speed">
+                  <div class="h-img"><img src="https://th.bing.com/th/id/OIP.8-lrFF4JpmY5vhqLLjdAzQHaHa?w=200&h=200&c=12&rs=1&p=0&o=6&cb=thws4&dpr=1.5&pid=23.1" alt=""></div>
+                  <h4>diviate nitro elite3</h4>
+                  <div class="tag">practice / speed</div>
+                </article>
+                <article class="card" data-tags="race,carbon">
+                  <div class="h-img"><img src="https://tse2.mm.bing.net/th/id/OIP.CKVVux8o3bUD9hhYEnBTIAHaHa?r=0&pid=ImgDet&w=474&h=474&rs=1&o=7&rm=3" ></div>
+                  <h4>velocity nitro3</h4>
+                  <div class="tag">practice</div>
+                </article>
+                <article class="card" data-tags="jog">
+                  <div class="h-img"><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/377787/01/sv01" alt=""></div>
+                  <h4>liberate nitro2</h4>
+                  <div class="tag">jog</div>
+                </article>
+                <article class="card" data-tags="spike,middle,speed">
+                  <div class="h-img"><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/380000/01/sv01/fnd/EEA/fmt/png/evoSPEED-Distance-NITRO%E2%84%A2-Elite+-4" alt=""></div>
+                  <h4>evospeed nitro elite+4</h4>
+                  <div class="tag">spike / middle / speed</div>
+                </article>
+                <article class="card" data-tags="spike,long">
+                    <div class="h-img"><img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1000,h_1000/global/379557/01/sv01/fnd/AUS/fmt/png/evoSPEED-NITRO%E2%84%A2-Elite-2-Long-Distance-Unisex-Track-and-Field-Shoes" alt=""></div>
+                    <h4>evospeed nitro elite2</h4>
+                    <div class="tag">spike /long</div>
+                </article>
+                </div>
+            </section>
+        </div>
+        <div id="adidas">
+            <div id="adidas-top">
+                <h1 class="textTop">■adidas</h1>
+            </div>
+            <section class="grid" id="productGrid4">
+                <div class="scroll" >
+                    <article class="card"  data-tags="race,carbon">
+                      <div class="h-img"><img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8a9edf9c46464107b3aa518f2d257c49_9366/Adizero_Adios_Pro_Evo_1_White_IH5564_01_standard.jpg" alt=""></div>
+                      <h4>adiospro evo1</h4>
+                      <div class="tag">race / carbon</div>
+                    </article>
+                    <article class="card" data-tags="race,long,practice">
+                      <div class="h-img"><img src="https://assets.adidas.com/images/w_940,f_auto,q_auto/689df9523ee54e72bb66af8800e402fb_9366/GX9776_01_standard.jpg" alt=""></div>
+                      <h4>adizero takumi sen10 </h4>
+                      <div class="tag">race / long / practice</div>
+                    </article>
+                    <article class="card" data-tags="race,carbon">
+                      <div class="h-img"><img src="https://tse2.mm.bing.net/th/id/OIP.cMZ9Rpoe9HLIb39Yri73qQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" ></div>
+                      <h4>adizero boston12</h4>
+                      <div class="tag">race/ carbon</div>
+                    </article>
+                    <article class="card" data-tags="race,carbon,long">
+                      <div class="h-img"><img src="https://assets.adidas.com/images/w_1880,f_auto,q_auto/e138c7d37c9e4115ad18d7628079a77d_9366/JR1094_01_00_standard.jpg" alt=""></div>
+                      <h4>adizero adiospro4</h4>
+                      <div class="tag">race/carbon/long</div>
+                    </article>
+                    <article class="card" data-tags="jog,practice">
+                      <div class="h-img"><img src="https://assets.adidas.com/images/w_940,f_auto,q_auto/689df9523ee54e72bb66af8800e402fb_9366/GX9776_01_standard.jpg" alt=""></div>
+                      <h4>adizero japan 9</h4>
+                      <div class="tag">jog / practice</div>
+                    </article>
+                    <article class="card" data-tags="long,carbon,race,speed">
+                      <div class="h-img"><img src="https://static.runnea.com/images/202308/adidas-adizero-prime-x-strung-2-800x800x80.jpg?1" alt=""></div>
+                      <h4>adizero prime x</h4>
+                      <div class="tag">long / carbon / race / speed</div>
+                    </article>
+                    <article class="card" data-tags="spike,long">
+                        <div class="h-img"><img src="https://athlerunning.com/17536-large_default/adizero-avanti-tyo.jpg" alt=""></div>
+                        <h4>adizero avanti</h4>
+                        <div class="tag">spike / long</div>
+                    </article>
+                    <article class="card" data-tags="spike,middle,speed">
+                        <div class="h-img"><img src="https://item-shopping.c.yimg.jp/i/n/vitaliser_adidas-11273_1_d_20230824191109" alt=""></div>
+                        <h4>adizero ambition</h4>
+                        <div class="tag">spike / middle / speed</div>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <div id="hoka">
+            <div id="hoka-top">
+                <h1 class="textTop">■HOKA</h1>
+            </div>
+            <section class="grid" id="productGrid5">
+              <div class="scroll" >
+                <article class="card"  data-tags="race,carbon,long">
+                    <div class="h-img"><img src="https://dms.deckers.com/hoka/image/upload/t_slider-grid-tile-2x/v1747276335/1168724-WBLC_1.png?_s=RAABAB0" alt=""></div>
+                    <h4>hoka oneone rocket x3</h4>
+                    <div class="tag">race / carbon / long</div>
+                </article>
+                <article class="card" data-tags="jog,long">
+                    <div class="h-img"><img src="https://dms.deckers.com/hoka/image/upload/f_auto,q_auto,dpr_auto/b_rgb:f7f7f9/w_1110/v1736215834/1162030-HSK_1.png?_s=RAABAB0" alt=""></div>
+                    <h4>clifton 10</h4>
+                    <div class="tag">jog / long</div>
+                </article>
+                <article class="card" data-tags="practice">
+                    <div class="h-img"><img src="https://dms.deckers.com/hoka/image/upload/f_auto,q_auto,dpr_auto/b_rgb:f7f7f9/w_1110/v1720749767/catalog/images/transparent/1147810-WHTV_1.png?_s=RAABAB0" ></div>
+                    <h4>mach 6</h4>
+                    <div class="tag">practice</div>
+                </article>
+                <article class="card" data-tags="jog">
+                    <div class="h-img"><img src="https://dms.deckers.com/hoka/image/upload/f_auto,q_auto,dpr_auto/b_rgb:f7f7f9/w_1650/v1683751053/1127952-ABSO_1.png?_s=RAABAB0" alt=""></div>
+                    <h4>bondi 8</h4>
+                    <div class="tag">jog</div>
+                </article>
+                <article class="card" data-tags="jog,practice">
+                    <div class="h-img"><img src="https://tse3.mm.bing.net/th/id/OIP.jY_60K324vpRIhNVn2xeNwHaGA?r=0&pid=ImgDet&w=474&h=384&rs=1&o=7&rm=3" alt=""></div>
+                    <h4>rincon 3</h4>
+                    <div class="tag">jog / practice</div>
+                </article>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+      <div>
+        <h3>このサイトは参考になりましたか？</h3>
+        <div class="reactions">
+          <button id="like"><i class="fas fa-thumbs-up"></i></i><span class="count" id="likeCount">0</span></button>
+          <button id="dislike"><i class="fas fa-thumbs-down"></i><span class="count" id="dislikeCount">0</span></button>
+        </div>
+      </div>
+    </footer>
+    <script src="asset/js/script.js"></script>
 </body>
 </html>
